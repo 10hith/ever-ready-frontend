@@ -6,7 +6,14 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'byteloop': {
+          green: '#25D366',  // WhatsApp green
+          dark: '#111111',   // Dark background
+        }
+      },
+    },
   },
   plugins: [],
 }
