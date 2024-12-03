@@ -40,31 +40,28 @@ export default function Home() {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            {[
-              {
-                title: 'Workflow Automation',
-                description: 'Streamline your business processes with intelligent workflows that reduce manual tasks and eliminate human error.'
-              },
-              {
-                title: 'Document Processing',
-                description: 'Transform your document handling with AI-powered extraction, classification, and processing.'
-              },
-              {
-                title: 'Custom AI Solutions',
-                description: 'Get tailored AI solutions that fit your specific business needs and integrate seamlessly with your existing systems.'
-              }
-            ].map((feature) => (
-              <div key={feature.title} className="flex flex-col rounded-2xl bg-white/5 p-6 hover:bg-white/10 transition-all">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                  {feature.title}
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p className="flex-auto">{feature.description}</p>
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {/* Document Processing */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-byteloop-dark/40 to-byteloop-dark/60 backdrop-blur-sm border border-byteloop-green/10 hover:border-byteloop-green/30 transition-all duration-300">
+              <img src="/images/document.svg" alt="Document Processing" width={48} height={48} className="mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-white">Document Processing</h3>
+              <p className="text-gray-400">Automate document handling with AI-powered extraction, classification, and processing capabilities.</p>
+            </div>
+
+            {/* Custom AI Solutions */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-byteloop-dark/40 to-byteloop-dark/60 backdrop-blur-sm border border-byteloop-green/10 hover:border-byteloop-green/30 transition-all duration-300">
+              <img src="/images/custom.svg" alt="Custom AI Solutions" width={48} height={48} className="mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-white">Custom AI Solutions</h3>
+              <p className="text-gray-400">Tailored AI solutions designed to meet your specific business needs and challenges.</p>
+            </div>
+
+            {/* Integration Support */}
+            <div className="p-6 rounded-xl bg-gradient-to-br from-byteloop-dark/40 to-byteloop-dark/60 backdrop-blur-sm border border-byteloop-green/10 hover:border-byteloop-green/30 transition-all duration-300">
+              <img src="/images/integration.svg" alt="Integration Support" width={48} height={48} className="mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-white">Integration Support</h3>
+              <p className="text-gray-400">Seamless integration with your existing systems and workflows for maximum efficiency.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -104,6 +101,100 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Why AI Agents section */}
+      <div className="relative py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Why Your Business Needs AI Agents
+            </h2>
+          </div>
+          
+          <div className="mx-auto grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-3">
+            {/* Boost Efficiency */}
+            <div className="relative group">
+              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-byteloop-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl" />
+              <div className="relative flex flex-col">
+                <div className="mx-auto h-48 w-48 flex items-center justify-center rounded-2xl bg-white/5 p-3 ring-1 ring-white/10">
+                  <img src="/images/efficiency.svg" alt="Efficiency" className="h-32 w-32" />
+                </div>
+                <h3 className="mt-8 text-lg font-semibold leading-8 text-white text-center">
+                  Boost Efficiency
+                </h3>
+                <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Optimize supply chains, pricing strategies, and resource management
+                  </li>
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Automate routine tasks, freeing your team for strategic priorities
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Stay Competitive */}
+            <div className="relative group">
+              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-byteloop-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl" />
+              <div className="relative flex flex-col">
+                <div className="mx-auto h-48 w-48 flex items-center justify-center rounded-2xl bg-white/5 p-3 ring-1 ring-white/10">
+                  <img src="/images/competitive.svg" alt="Competitive" className="h-32 w-32" />
+                </div>
+                <h3 className="mt-8 text-lg font-semibold leading-8 text-white text-center">
+                  Stay Competitive
+                </h3>
+                <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Analyze trends, monitor competitors, and adapt in real time
+                  </li>
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Deliver faster, smarter solutions for customers
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Enhance Decision-Making */}
+            <div className="relative group">
+              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-byteloop-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl" />
+              <div className="relative flex flex-col">
+                <div className="mx-auto h-48 w-48 flex items-center justify-center rounded-2xl bg-white/5 p-3 ring-1 ring-white/10">
+                  <img src="/images/decision.svg" alt="Decision Making" className="h-32 w-32" />
+                </div>
+                <h3 className="mt-8 text-lg font-semibold leading-8 text-white text-center">
+                  Enhance Decision-Making
+                </h3>
+                <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Leverage real-time data to make informed decisions
+                  </li>
+                  <li className="flex gap-x-3">
+                    <svg className="h-6 w-5 flex-none text-byteloop-green" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Create actionable strategies backed by AI insights
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
