@@ -1,4 +1,34 @@
+import TestimonialSlider from '../components/TestimonialSlider';
+
 export default function Home() {
+  const aiTestimonials = [
+    {
+      quote: "AI implementation can boost productivity by up to 40%, enabling businesses to accomplish more with the same resources",
+      author: "Accenture"
+    },
+    {
+      quote: "AI chatbots and virtual assistants can handle up to 80% of routine customer queries, leading to a 70% reduction in response times.",
+      author: "Gartner"
+    },
+    {
+      quote: "70% of SMBs that have adopted AI report being able to scale their operations without a corresponding increase in headcount, significantly improving profitability.",
+      author: "PwC"
+    }
+  ];
+
+  const customerTestimonials = [
+    {
+      quote: "I can turn my phone off and not worry about missing out emergencies during out of hours",
+      author: "Emily",
+      company: "PMC property management"
+    },
+    {
+      quote: "Ever Ready Response has given me my life back during out of hours. I would highly recommend them.",
+      author: "Dave",
+      company: "HouseExpert Services"
+    }
+  ];
+
   return (
     <div className="bg-everready-dark">
       {/* Hero section */}
@@ -129,13 +159,13 @@ export default function Home() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Optimize supply chains, pricing strategies, and resource management
                   </li>
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Automate routine tasks, freeing your team for strategic priorities
@@ -156,13 +186,13 @@ export default function Home() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Analyze trends, monitor competitors, and adapt in real time
                   </li>
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Deliver faster, smarter solutions for customers
@@ -183,13 +213,13 @@ export default function Home() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-base leading-7 text-gray-300">
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Leverage real-time data to make informed decisions
                   </li>
                   <li className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-everready-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
                     Create actionable strategies backed by AI insights
@@ -197,6 +227,44 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Beyond the Hype section */}
+      <div className="relative isolate overflow-hidden py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent sm:text-6xl">
+              Beyond the Hype: Real AI Benefits
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Artificial Intelligence has moved beyond buzzwords to become a transformative force reshaping industries worldwide. 
+              The real-world benefits of AI are significant and measurable—enhancing customer interactions, streamlining operations, 
+              and enabling companies to set new standards for efficiency and profitability. Below, we highlight compelling insights 
+              that showcase the tangible impact of AI in today's business landscape.
+            </p>
+          </div>
+
+          {/* Testimonials Slider */}
+          <div className="relative mt-16">
+            <TestimonialSlider testimonials={aiTestimonials} />
+          </div>
+        </div>
+      </div>
+
+      {/* Customer Testimonials section */}
+      <div className="relative isolate overflow-hidden py-24 sm:py-32 bg-black/30">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent sm:text-6xl">
+              What Do Our Customers Say
+            </h2>
+          </div>
+
+          {/* Customer Testimonials Slider */}
+          <div className="relative mt-16">
+            <TestimonialSlider testimonials={customerTestimonials} />
           </div>
         </div>
       </div>
@@ -234,7 +302,7 @@ export default function Home() {
                     'Deliver exceptional results'
                   ].map((benefit) => (
                     <li key={benefit} className="flex items-center text-gray-300">
-                      <svg className="h-5 w-5 text-everready-primary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="h-5 w-5 text-everready-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {benefit}
