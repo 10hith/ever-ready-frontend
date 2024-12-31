@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'everready': {
-          primary: '#00BFFF',  // Cyan Blue
+          primary: '#007BFF',  // Electric Blue
           secondary: '#007BFF', // Electric Blue
           dark: '#111111',   // Dark background
         }

@@ -1,101 +1,64 @@
 'use client'
 
-import { useState } from 'react'
+import React from 'react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: '',
-  })
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    // Add form submission logic here
-    console.log('Form submitted:', formData)
-  }
-
   return (
-    <div className="isolate bg-everready-dark px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get in Touch</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-300">
-          Ready to transform your business with AI? Let's discuss how we can help.
-        </p>
+    <div className="bg-everready-dark min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-white">
+        {/* Main Content */}
+        <div className="text-center sm:text-left">
+          <p className="text-2xl sm:text-3xl lg:text-4xl leading-relaxed mb-12">
+            We're here to help you connect and find solutions to your needs. Our team is ready to provide the support and information you're looking for.
+          </p>
+
+          {/* Contact Details */}
+          <div className="space-y-8 mb-16">
+            <div>
+              <h2 className="text-2xl font-semibold mb-2">Email</h2>
+              <a 
+                href="mailto:admin@ever-ready.ai" 
+                className="text-xl text-everready-primary hover:text-everready-primary/80 transition-colors"
+              >
+                admin@ever-ready.ai
+              </a>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold mb-2">WhatsApp</h2>
+              <a 
+                href="https://wa.me/447768932956" 
+                className="text-xl text-everready-primary hover:text-everready-primary/80 transition-colors"
+              >
+                +44 7768 932956
+              </a>
+            </div>
+          </div>
+
+          {/* Tagline with gradient */}
+          <div className="mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-500 via-everready-primary to-everready-primary bg-clip-text text-transparent">
+              We are ready when you are !!
+            </h2>
+          </div>
+
+          {/* Feedback Section */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6">Feedback</h2>
+            <p className="text-xl leading-relaxed">
+              Your feedback helps us improve. If you have suggestions or comments about our services, 
+              please let us know at{' '}
+              <a 
+                href="mailto:admin@ever-ready.ai" 
+                className="text-red-500 hover:text-red-400 transition-colors underline"
+              >
+                admin@ever-ready.ai
+              </a>
+              .
+            </p>
+          </div>
+        </div>
       </div>
-      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div className="sm:col-span-2">
-            <label htmlFor="name" className="block text-sm font-semibold leading-6 text-white">
-              Name
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-white">
-              Email
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-white">
-              Company
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="company"
-                id="company"
-                value={formData.company}
-                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
-              Message
-            </label>
-            <div className="mt-2.5">
-              <textarea
-                name="message"
-                id="message"
-                rows={4}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mt-10">
-          <button
-            type="submit"
-            className="block w-full rounded-xl bg-everready-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-everready-primary transition-all"
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
     </div>
-  )
+  );
 }
