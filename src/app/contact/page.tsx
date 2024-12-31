@@ -17,7 +17,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="isolate bg-byteloop-dark px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-everready-dark px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get in Touch</h2>
         <p className="mt-2 text-lg leading-8 text-gray-300">
@@ -37,7 +37,7 @@ export default function Contact() {
                 id="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-byteloop-green sm:text-sm sm:leading-6"
+                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                 id="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-byteloop-green sm:text-sm sm:leading-6"
+                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                 id="company"
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-byteloop-green sm:text-sm sm:leading-6"
+                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function Contact() {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-byteloop-green sm:text-sm sm:leading-6"
+                className="block w-full rounded-xl border-0 px-3.5 py-2 bg-white/5 text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-everready-primary sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-xl bg-byteloop-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-byteloop-green transition-all"
+            className="block w-full rounded-xl bg-everready-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-everready-primary transition-all"
           >
             Send Message
           </button>

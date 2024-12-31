@@ -7,8 +7,8 @@ import Footer from '../components/layout/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ByteLoop - AI Automation Agency',
-  description: 'Transform your business with intelligent automation solutions. ByteLoop helps companies streamline operations through custom AI implementation.',
+  title: 'EverReady - AI Automation Agency',
+  description: 'Transform your business with intelligent automation solutions. EverReady helps companies streamline operations through custom AI implementation.',
 }
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-byteloop-dark text-white`}>
+      <body className={`${inter.className} bg-everready-dark text-white`}>
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">

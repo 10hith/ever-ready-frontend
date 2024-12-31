@@ -1,9 +1,9 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="bg-byteloop-dark px-6 py-32 lg:px-8">
+    <div className="bg-everready-dark px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-300">
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Privacy Policy</h1>
-        <p className="mt-6 text-xl leading-8 text-byteloop-green">
+        <p className="mt-6 text-xl leading-8 text-everready-primary">
           Last Updated: {new Date().toLocaleDateString()}
         </p>
         
@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
           <div className="rounded-2xl bg-white/5 p-8 hover:bg-white/10 transition-all">
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-white">1. Information We Collect</h2>
             <p className="mt-6">
-              At ByteLoop, we collect information that you provide directly to us when you:
+              At EverReady, we collect information that you provide directly to us when you:
             </p>
             <ul className="mt-4 list-disc pl-8 space-y-2">
               <li>Fill out forms on our website</li>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <p className="mt-4">
-              Email: <a href="mailto:privacy@byteloop.ai" className="text-byteloop-green hover:text-opacity-80 transition-all">privacy@byteloop.ai</a><br />
+              Email: <a href="mailto:privacy@everready.ai" className="text-everready-primary hover:text-opacity-80 transition-all">privacy@everready.ai</a><br />
               Address: [Your Business Address]
             </p>
           </div>

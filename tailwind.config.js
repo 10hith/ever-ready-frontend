@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'byteloop': {
-          green: '#25D366',  // WhatsApp green
+        'everready': {
+          primary: '#00BFFF',  // Cyan Blue
           dark: '#111111',   // Dark background
         }
       },
