@@ -41,8 +41,7 @@ export default function Home() {
                 Automate Your Business with AI
               </h1>
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
-                EverReady helps businesses transform their operations through intelligent automation. 
-                We build custom AI solutions that streamline workflows and boost productivity.
+                <span className="block">EverReady can help automate your business processes by implementing AI in your operational workflows.</span>
               </p>
               <div className="mt-6 sm:mt-10 flex items-center gap-x-4 sm:gap-x-6">
                 <a
@@ -75,94 +74,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Feature section */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-everready-primary">AI Automation</h2>
-          <p className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
-            Everything you need to automate your business
-          </p>
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
-            From workflow automation to intelligent document processing, we provide end-to-end AI solutions 
-            that help your business operate more efficiently.
-          </p>
-        </div>
-        <div className="mx-auto mt-12 sm:mt-16 lg:mt-20 max-w-2xl lg:max-w-none">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Document Processing */}
-            <div className="p-4 sm:p-6 rounded-xl bg-gradient-to-br from-everready-dark/40 to-everready-dark/60 backdrop-blur-sm border border-everready-primary/10 hover:border-everready-primary/30 transition-all duration-300">
-              <img src="/images/document.svg" alt="Document Processing" className="w-8 h-8 sm:w-12 sm:h-12 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-white">Document Processing</h3>
-              <p className="text-gray-400">Automate document handling with AI-powered extraction, classification, and processing capabilities.</p>
-            </div>
-
-            {/* Custom AI Solutions */}
-            <div className="p-4 sm:p-6 rounded-xl bg-gradient-to-br from-everready-dark/40 to-everready-dark/60 backdrop-blur-sm border border-everready-primary/10 hover:border-everready-primary/30 transition-all duration-300">
-              <img src="/images/custom.svg" alt="Custom AI Solutions" className="w-8 h-8 sm:w-12 sm:h-12 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-white">Custom AI Solutions</h3>
-              <p className="text-gray-400">Tailored AI solutions designed to meet your specific business needs and challenges.</p>
-            </div>
-
-            {/* Integration Support */}
-            <div className="p-4 sm:p-6 rounded-xl bg-gradient-to-br from-everready-dark/40 to-everready-dark/60 backdrop-blur-sm border border-everready-primary/10 hover:border-everready-primary/30 transition-all duration-300">
-              <img src="/images/integration.svg" alt="Integration Support" className="w-8 h-8 sm:w-12 sm:h-12 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-white">Integration Support</h3>
-              <p className="text-gray-400">Seamless integration with your existing systems and workflows for maximum efficiency.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Future section */}
-      <div className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-everready-dark via-everready-primary/10 to-everready-dark" />
-        
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div className="relative">
-              <div className="absolute -left-4 sm:-left-8 -top-4 sm:-top-8 w-48 sm:w-72 h-48 sm:h-72 bg-everready-primary/20 rounded-full blur-3xl" />
-              <div className="relative">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4 sm:mb-6">
-                  The Future is Here
-                </h2>
-                <p className="text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
-                  AI is driving the next industrial revolution. From improving productivity to delivering 
-                  personalized customer experiences, AI Agents are transforming how businesses operate. 
-                  Partner with EverReady to integrate these revolutionary tools into your business strategy.
-                </p>
-              </div>
-            </div>
-            <div className="relative group">
-              <div className="absolute inset-0 rounded-2xl bg-white/5 backdrop-blur-lg transform transition-all duration-300 group-hover:bg-white/10" />
-              <div className="relative p-8">
-                <div className="grid grid-cols-2 gap-6">
-                  {[
-                    { number: '85%', text: 'Increase in Productivity' },
-                    { number: '60%', text: 'Cost Reduction' },
-                    { number: '24/7', text: 'Automated Operations' },
-                    { number: '90%', text: 'Accuracy Rate' },
-                  ].map((stat) => (
-                    <div key={stat.text} className="text-center">
-                      <div className="text-2xl font-bold text-everready-primary">{stat.number}</div>
-                      <div className="text-sm text-gray-300 mt-1">{stat.text}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Why AI Agents section */}
       <div className="relative py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
-              Why Your Business Needs AI Agents
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-500 via-everready-primary to-everready-primary bg-clip-text text-transparent">
+              Why Your Business Needs AI
             </h2>
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
+              <span className="block">Artificial Intelligent is transforming industries across the globe.</span>
+              <span className="block">AI helps enhance customer interactions, streamline operations, and enable companies to be more efficient and profitable.</span>
+              <span className="block">We can help you on your journey to integrating AI into your business.</span>
+            </p>
+            <div className="mt-8 sm:mt-12"></div>
           </div>
-          
+
           <div className="mx-auto grid max-w-xl grid-cols-1 gap-12 sm:gap-16 lg:max-w-none lg:grid-cols-3">
             {/* Boost Efficiency */}
             <div className="relative group">
@@ -179,13 +105,13 @@ export default function Home() {
                     <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
-                    Optimize supply chains, pricing strategies, and resource management
+                    Automate routine tasks, freeing your team for strategic priorities
                   </li>
                   <li className="flex gap-x-3">
                     <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
-                    Automate routine tasks, freeing your team for strategic priorities
+                    Optimize resource management, increase productivity by up to 80% and reduce costs by up to 60%
                   </li>
                 </ul>
               </div>
@@ -206,13 +132,13 @@ export default function Home() {
                     <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
-                    Analyze trends, monitor competitors, and adapt in real time
+                    Deliver faster, smarter solutions for customers
                   </li>
                   <li className="flex gap-x-3">
                     <svg className="h-6 w-5 flex-none text-everready-secondary" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                     </svg>
-                    Deliver faster, smarter solutions for customers
+                    Adapt in real time, keep your operations running 24/7 with up to 90% accuracy.
                   </li>
                 </ul>
               </div>
@@ -248,24 +174,54 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Beyond the Hype section */}
-      <div className="relative isolate overflow-hidden py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-blue-600 to-[#007BFF] bg-clip-text text-transparent sm:text-6xl">
-              Beyond the Hype: Real AI Benefits
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Artificial Intelligence has moved beyond buzzwords to become a transformative force reshaping industries worldwide. 
-              The real-world benefits of AI are significant and measurable—enhancing customer interactions, streamlining operations, 
-              and enabling companies to set new standards for efficiency and profitability. Below, we highlight compelling insights 
-              that showcase the tangible impact of AI in today's business landscape.
-            </p>
+      {/* Future section */}
+      <div className="relative isolate overflow-hidden bg-black/30">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-everready-dark via-everready-primary/10 to-everready-dark" />
+        
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="relative">
+              <div className="absolute -left-4 sm:-left-8 -top-4 sm:-top-8 w-48 sm:w-72 h-48 sm:h-72 bg-everready-primary/20 rounded-full blur-3xl" />
+              <div className="relative">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4 sm:mb-6">
+                  The Future is Here
+                </h2>
+                <p className="text-base sm:text-lg leading-7 sm:leading-8 text-gray-300">
+                  AI is driving the next industrial revolution. From improving productivity to delivering
+                  personalized customer experiences, AI Agents are transforming how businesses operate.
+                  Partner with EverReady to integrate these revolutionary tools into your business strategy.
+                </p>
+              </div>
+            </div>
+            <div className="relative group">
+              <div className="absolute inset-0 rounded-2xl bg-white/5 backdrop-blur-lg transform transition-all duration-300 group-hover:bg-white/10" />
+              <div className="relative p-8">
+                <div className="grid grid-cols-2 gap-6">
+                  {[
+                    { number: '85%', text: 'Increase in Productivity' },
+                    { number: '60%', text: 'Cost Reduction' },
+                    { number: '24/7', text: 'Automated Operations' },
+                    { number: '90%', text: 'Accuracy Rate' },
+                  ].map((stat) => (
+                    <div key={stat.text} className="text-center">
+                      <div className="text-2xl font-bold text-everready-primary">{stat.number}</div>
+                      <div className="text-sm text-gray-300 mt-1">{stat.text}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Testimonials Slider */}
-          <div className="relative mt-16">
-            <TestimonialSlider testimonials={aiTestimonials} />
+          <div className="mt-12">
+            <p className="text-center text-xl font-semibold text-white mb-8">
+              Below, we highlight compelling insights 
+              that showcase the tangible impact of AI in today's business landscape.
+            </p>
+            <div className="relative scale-90">
+              <TestimonialSlider testimonials={aiTestimonials} />
+            </div>
           </div>
         </div>
       </div>
@@ -280,7 +236,7 @@ export default function Home() {
           </div>
 
           {/* Customer Testimonials Slider */}
-          <div className="relative mt-16">
+          <div className="relative mt-16 scale-90">
             <TestimonialSlider testimonials={customerTestimonials} />
           </div>
         </div>
