@@ -62,11 +62,11 @@ const TestimonialSlider = ({ testimonials, autoplayInterval = 5000 }: Testimonia
           {testimonials.map((testimonial, index) => (
             <div key={index} className="flex-none w-full px-4">
               <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-                <p className={`text-center ${testimonial.company ? 'text-rose-400' : ''}`}>
+                <p className="text-center text-white">
                   "{testimonial.quote}"
                 </p>
                 <footer className="mt-6">
-                  <p className={`text-lg text-center ${testimonial.company ? 'text-white' : 'text-everready-primary'}`}>
+                  <p className="text-lg text-center text-white">
                     {testimonial.company ? testimonial.author : `- ${testimonial.author}`}
                   </p>
                   {testimonial.company && (

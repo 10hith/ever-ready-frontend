@@ -4,7 +4,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-byteloop-green">Our Services</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-blue-600 to-[#007BFF] bg-clip-text text-transparent sm:text-4xl">
             AI Solutions for Every Business Need
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-300">
@@ -41,10 +41,6 @@ const services = [
     description: 'Automate repetitive tasks and workflows with AI-powered solutions that learn and adapt to your business processes.',
   },
   {
-    name: 'Document Intelligence',
-    description: 'Transform unstructured documents into actionable data with our advanced document processing and analysis solutions.',
-  },
-  {
     name: 'Custom AI Development',
     description: 'Get tailored AI solutions built specifically for your business needs, from chatbots to predictive analytics.',
   },
@@ -59,5 +55,9 @@ const services = [
   {
     name: 'Maintenance & Support',
     description: 'Ensure your AI solutions continue to perform optimally with our ongoing maintenance and support services.',
+  },
+  {
+    name: 'Document Intelligence',
+    description: 'Transform unstructured documents into actionable data with our advanced document processing and analysis solutions.',
   },
 ]

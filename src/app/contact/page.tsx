@@ -8,10 +8,12 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto text-white">
         {/* Main Content */}
         <div className="text-center sm:text-left">
-          <p className="text-2xl sm:text-3xl lg:text-4xl leading-relaxed mb-12">
-            We're here to help you connect and find solutions to your needs. Our team is ready to provide the support and information you're looking for.
-          </p>
-
+          {/* Tagline with gradient */}
+          <div className="mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-500 via-everready-primary to-everready-primary bg-clip-text text-transparent">
+              We are ready when you are !!
+            </h2>
+          </div>
           {/* Contact Details */}
           <div className="space-y-8 mb-16">
             <div>
@@ -35,22 +37,15 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Tagline with gradient */}
-          <div className="mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-500 via-everready-primary to-everready-primary bg-clip-text text-transparent">
-              We are ready when you are !!
-            </h2>
-          </div>
 
           {/* Feedback Section */}
           <div>
             <h2 className="text-3xl font-bold mb-6">Feedback</h2>
             <p className="text-xl leading-relaxed">
-              Your feedback helps us improve. If you have suggestions or comments about our services, 
-              please let us know at{' '}
+              If you have any enquiries, suggestions or comments about our services, please let us know at{' '}
               <a 
                 href="mailto:admin@ever-ready.ai" 
-                className="text-red-500 hover:text-red-400 transition-colors underline"
+                className="text-white hover:text-gray-200 transition-colors underline"
               >
                 admin@ever-ready.ai
               </a>
